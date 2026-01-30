@@ -1,0 +1,10 @@
+.vscode/**
+.git/**
+.gitignore
+README.md
+CHANGELOG.md
+LICENSE
+.vscodeignore
+node_modules/**
+*.vsix
+.github/**

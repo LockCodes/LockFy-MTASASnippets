@@ -1,0 +1,65 @@
+{
+    "name": "lockfy-mta-snippets",
+    "displayName": "LockFy MTA:SA Snippets",
+    "description": "Complete Lua snippets for MTA:SA (Multi Theft Auto: San Andreas) - 1500+ natives, updated for 2026",
+    "version": "1.0.0",
+    "publisher": "ZeusDev",
+    "author": {
+        "name": "Zeus"
+    },
+    "icon": "common/extension.png",
+    "galleryBanner": {
+        "color": "#1A1A1A",
+        "theme": "dark"
+    },
+    "license": "MIT",
+    "pricing": "Free",
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "keywords": [
+        "mta",
+        "mtasa",
+        "lua",
+        "snippets",
+        "multitheftauto",
+        "gta",
+        "sanandreas",
+        "gaming",
+        "modding"
+    ],
+    "homepage": "https://github.com/LockCodes/LockFy-MTASASnippets/blob/main/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LockCodes/LockFy-MTASASnippets.git"
+    },
+    "bugs": {
+        "url": "https://github.com/LockCodes/LockFy-MTASASnippets/issues"
+    },
+    "extensionPack": [
+        "sumneko.lua"
+    ],
+    "capabilities": {
+        "untrustedWorkspaces": {
+            "supported": true
+        },
+        "virtualWorkspaces": {
+            "supported": true
+        }
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "lua",
+                "path": "./snippets/lua.json"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml.json"
+            }
+        ]
+    }
+}
