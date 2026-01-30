@@ -1,7 +1,7 @@
 {
     "name": "lockfy-mta-snippets",
     "displayName": "LockFy MTA:SA Snippets",
-    "description": "Complete Lua snippets for MTA:SA (Multi Theft Auto: San Andreas) - 1500+ natives, updated for 2026",
+    "description": "Complete Lua snippets and type definitions for MTA:SA (Multi Theft Auto: San Andreas) - 1400+ natives with full IntelliSense support",
     "version": "1.0.0",
     "publisher": "ZeusDev",
     "author": {
@@ -42,6 +42,9 @@
     "extensionPack": [
         "sumneko.lua"
     ],
+    "scripts": {
+        "postinstall": "echo 'Add definitions/mta-sa.lua to your Lua.workspace.library setting'"
+    },
     "capabilities": {
         "untrustedWorkspaces": {
             "supported": true

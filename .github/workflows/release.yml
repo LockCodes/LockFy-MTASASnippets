@@ -31,6 +31,9 @@ jobs:
       - name: Sync natives
         run: python tools/sync_natives.py
 
+      - name: Generate type definitions
+        run: python tools/generate_definitions.py
+
       - name: Package extension
         run: vsce package
 
@@ -38,5 +41,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: '*.vsix'
+          files: |
+            *.vsix
+            definitions/mta-sa.lua
           generate_release_notes: true
